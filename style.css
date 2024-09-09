@@ -16,3 +16,35 @@ th {
   padding: 10px;
   margin: 1px;
 }
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 5px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+/* sélecteurs frangin */
+input[type="checkbox"],
+input[type="checkbox"] + label,
+input[type="radio"],
+input[type="radio"] + label {
+  display: inline;
+  margin-top: 15px;
+}
+
+fieldset {
+  margin: 15px;
+  max-width: 600px;
+  border: 1px solid black;
+}
+
+li input,
+li label,
+li textarea {
+  display: inline;
+}

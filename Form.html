@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formumu</title>
+  </head>
+  <body>
+    <!-- LES INPUUUTS -->
+    <!-- les inputs text permettent d'écrire du texte court -->
+
+    <form action="">
+      <fieldset>
+        <legend>Un p'tit form</legend>
+        <label for="celuila">mon pas premier input</label>
+        <input type="text" name="celuila" placeholder="ici mettre texte" />
+
+        <label for="number">Un input numbeurre</label>
+        <input type="number" name="number" min="6" max="18" step="3" />
+
+        <label for="mdp">Vous en passerez pas</label>
+        <input
+          type="password"
+          name="mdp"
+          placeholder="mettre mot de passe"
+          minlength="6"
+        />
+      </fieldset>
+
+      <label for="date">Naissance</label>
+      <input type="date" name="date" />
+
+      <label for="range">Un input range mais pas aspirateur</label>
+      <input type="range" name="range" />
+
+      <label for="colori">Choisie ta color</label>
+      <input type="color" name="colori" />
+      <!-- les couleurs seront en hexadecimales -->
+
+      <input type="checkbox" name="checky" />
+      <label for="checky">CheckMate</label>
+
+      <div>
+        <input type="radio" name="radio" value="humain" />
+        <label for="radio">Humain</label>
+        <input type="radio" name="radio" value="alien" />
+        <label for="radio">Alien</label>
+      </div>
+
+      <label for="balek"></label>
+      <textarea
+        name="balek"
+        id=""
+        cols="50"
+        rows="5"
+        placeholder="Raconte ta vie"
+      ></textarea>
+
+      <label for="select">Manger</label>
+      <select name="select">
+        <option value="null" selected disabled>Choisis ton repas</option>
+        <option value="sandwich">sandwich</option>
+        <option value="soupe">soupe</option>
+        <option value="frites">frites</option>
+      </select>
+
+      <!-- Valide le formu !OBLIGATOIRE! -->
+      <input type="submit" value="valider" />
+    </form>
+  </body>
+</html>

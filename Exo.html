@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formu</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Votre identité</legend>
+        <ol>
+          <li>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="Prénom et nom" />
+          </li>
+          <li>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" placeholder="exemple@domaine.com" />
+          </li>
+          <li>
+            <label for="tel">Téléphone</label>
+            <input
+              type="tel"
+              name="tel"
+              pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
+              placeholder="06.12.34.56.78"
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Adresse de livraison</legend>
+        <ol>
+          <li>
+            <label for="adresse">Adresse</label>
+            <textarea name="adresse" rows="4"></textarea>
+          </li>
+          <li>
+            <label for="cp">Code postal</label>
+            <input type="text" name="cp" />
+          </li>
+          <li>
+            <label for="pays">Pays</label>
+            <input type="text" name="pays" />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Informations CB</legend>
+        <ol>
+          <li>
+            <fieldset class="inside">
+              <legend>Type de carde bancaire</legend>
+              <ol>
+                <li>
+                  <input type="radio" name="check" value="visa" />
+                  <label for="check">VISA</label>
+                </li>
+                <li>
+                  <input type="radio" name="check" value="amex" />
+                  <label for="check">AmEx</label>
+                </li>
+                <li>
+                  <input type="radio" name="check" value="mastercard" />
+                  <label for="check">MasterCard</label>
+                </li>
+              </ol>
+            </fieldset>
+          </li>
+          <li>
+            <label for="numcard">N° de carte</label>
+            <input type="text" name="numcard" maxlength="16" />
+          </li>
+          <li>
+            <label for="code">Code de sécurité</label>
+            <input type="password" name="code" maxlength="4" />
+          </li>
+          <li>
+            <label for="namecard">Nom du porteur</label>
+            <input
+              type="text"
+              name="namecard"
+              placeholder="Nom et Prénom sur CB"
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="J'achète !" />
+      </fieldset>
+    </form>
+  </body>
+</html>
