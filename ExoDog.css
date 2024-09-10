@@ -1,0 +1,50 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+img {
+  float: right;
+  border: 1px solid black;
+}
+
+p {
+  display: block;
+}
+
+h2 {
+  background-color: #93a6fc;
+  color: #38389e;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 3px;
+}
+
+tr:nth-child(even) {
+  /* sélectionne les lignes paires du tableau */
+  background-color: #e6e6e6;
+}
+
+div {
+  margin: 3px;
+}
+
+/* Les classes */
+
+.blu {
+  color: #38389e;
+}
+
+.bold {
+  font-weight: bold;
+}

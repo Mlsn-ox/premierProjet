@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        background-color: black;
+      }
+    </style>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script>
+      let chiffre = 4;
+      console.log(chiffre);
+      console.log(chiffre + 4);
+
+      let texte = "Je suis beau !";
+      console.log(texte);
+      texte = "je suis moche...";
+      console.log(texte);
+      const colere = "Je suis colère";
+      console.log(colere);
+
+      const mot = "chienne";
+      const caractere = " de caractère.";
+      const phrase = mot + caractere;
+      console.log(phrase);
+
+      let voiture = {
+        modele: "Lada",
+        portes: 3,
+        etat: false,
+      };
+      console.log(voiture);
+      console.log(voiture.modele);
+
+      let panier = ["fraise", "pomme", "banane", 5, true, "autruche"];
+      console.log(panier);
+      console.log(panier[5]);
+
+      let guillaume = null;
+      let fabien = undefined;
+
+      let verif1 = true;
+      let one = 1;
+      console.log(verif1 == one);
+
+      let color = "bleu";
+      if (color == true) {
+        console.log("on est bon");
+      } else {
+        console.log("on est pas bon");
+      }
+
+      let chien = "labrador";
+      let chat = "sphynx";
+
+      if (chien == "labrador" && chat == "sphynx") {
+      }
+      if (chien == "labrador" || chat == "sphynx") {
+      }
+
+      let eau = 15;
+
+      if (eau >= 10 && eau <= 30) {
+        console.log("Tout est ok !");
+      }
+
+      eau >= 10 && eau <= 30 ? console.log("Opé") : console.log("nope");
+    </script>
+  </body>
+</html>
