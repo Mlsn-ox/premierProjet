@@ -69,6 +69,66 @@
       }
 
       eau >= 10 && eau <= 30 ? console.log("Opé") : console.log("nope");
+
+      // Maths
+
+      addition = 1 + 1; // 2
+      soustraction = 2 - 1; // 1
+      multiplication = 2 * 3; // 6
+      division = 8 / 2; // 4
+      puissance = 2 ** 4; // 16
+      power = Math.pow(2, 4);
+      random = Math.random(); // entre 0 et 1
+
+      let cent = Math.floor(Math.random() * 100);
+      console.log(cent);
+
+      // boucle 4 par 4 jusqu'à 100
+      for (let i = 0; i <= 100; i += 4) {
+        console.log(i);
+      }
+      multipliParDeux(15);
+
+      for (index = 0; index < panier.length; index++) {
+        console.log(panier[index]);
+      }
+
+      for (fruit of panier) {
+        console.log(fruit);
+      }
+
+      function multipliParDeux(nbr) {
+        console.log(nbr * 2);
+      }
+
+      multipliParDeux(15);
+      multipliParDeux(987);
+      multipliParDeux(17.369);
+
+      // concaténation
+
+      let p = "coucou" + " c'est nous";
+      console.log(p);
+
+      let k = 15;
+      console.log(`J'ai ${k} chiens`);
+
+      const fatigue = false;
+      const action = "dormir";
+      const etatDeFatigue = `Jean est ${
+        fatigue ? `fatigué et veut ${action} !` : `en pleine forme !`
+      }`;
+      console.log(etatDeFatigue);
+
+      let vav = 6;
+      let vov = 41;
+
+      let stock = vav;
+      vav = vov;
+      vov = stock;
+
+      console.log(vav);
+      console.log(vov);
     </script>
   </body>
 </html>

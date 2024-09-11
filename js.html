@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript exo</title>
+    <style>
+      * {
+        background-color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div {
+        margin: 1.5em;
+      }
+
+      button {
+        width: 200px;
+        height: 3em;
+        background-color: #66a766;
+        border-radius: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1 id="personne">Jean-Michel</h1></div>
+    <div><input type="text" name="texte" id="texte" /></div>
+    <div><button id="btn">HEY!</button></div>
+    <div><button id="btn2">Change de titre</button></div>
+    <div><input type="color" id="color" /></div>
+    <div>
+      <input type="range" id="range" min="0" max="1" step="0.1" />
+    </div>
+
+    <img src="./autruche.jpg" alt="autruuuuuuuuuuche" id="autruche" />
+
+    <script>
+      const perso = document.getElementById("personne");
+      const text = document.getElementById("texte");
+      const btn = document.getElementById("btn");
+      const btn2 = document.getElementById("btn2");
+      const color = document.getElementById("color");
+      const autruche = document.getElementById("autruche");
+      const range = document.getElementById("range");
+      console.log(range);
+
+      //INPUT
+
+      console.log(text);
+      text.value = ""; // on reset la value de l'input
+      text.addEventListener("input", function () {
+        console.log(text.value);
+      });
+
+      //TITRE
+
+      console.log(perso.innerHTML);
+      perso.innerHTML = "Janine";
+      btn2.addEventListener("click", function () {
+        let nom = ["Hector", "Olympe", "Mélisiane", "Mathieu"];
+        let rand = Math.floor(Math.random() * nom.length);
+        perso.innerHTML = nom[rand];
+      });
+
+      //BUTTON
+
+      let compteur = 0;
+      btn.addEventListener("click", function () {
+        if (compteur < 10) {
+          compteur++;
+          console.log(compteur);
+        } else {
+          console.log("il y en a partout !!!");
+        }
+      });
+
+      //COLOR
+
+      console.log(color);
+      color.addEventListener("input", function () {
+        console.log(color.value);
+        perso.style.color = color.value;
+      });
+
+      //IMAGE
+
+      range.value = 0;
+      let w = autruche.width;
+      range.addEventListener("input", function () {
+        autruche.width = w * range.value;
+      });
+    </script>
+  </body>
+</html>
