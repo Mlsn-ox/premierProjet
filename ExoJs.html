@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="number" id="numb" /> <button id="btn">Valider</button>
+    </div>
+    <div>
+      <button id="piece">Pile ou face</button>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const number = document.getElementById("numb");
+      const piece = document.getElementById("piece");
+
+      btn.addEventListener("click", function () {
+        for (let i = 0; i <= 10; i++) {
+          console.log(
+            `${number.value} fois ${i} est égale à ${number.value * i}`
+          );
+        }
+      });
+
+      piece.addEventListener("click", function () {
+        let rand =
+          Math.random() > 0.5
+            ? console.log("Pile !")
+            : console.log("Dans ta face !");
+      });
+
+      //     if (rand > 0.5) {
+      //       console.log("Pile !");
+      //     } else {
+      //       console.log("Dans ta face !");
+      //     }
+
+      a > b; // a sup b
+      a >= b; // a sup ou égal b
+      a < b; // a inf b
+      a <= b; // a inf ou égal b
+      a != b; // a différent b
+      a == b; // a égal b même si type différent
+      a === b; // a strictement égal b
+    </script>
+  </body>
+</html>
